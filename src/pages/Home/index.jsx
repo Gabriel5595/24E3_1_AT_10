@@ -1,9 +1,10 @@
+import Menu from "../../components/Menu"
 import styles from "./home.module.css"
 
 export default function Home() {
     return (
         <div>
-            <h1>Template</h1>
+            <Menu />
         </div>
     )
 }

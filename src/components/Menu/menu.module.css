@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuIcon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.iconBar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profileIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menuOptions {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.menuOptions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuOptions li {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .menuIcon {
+        display: none;
+    }
+
+    .menuOptions ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menuOptions li {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        text-align: left;
+        width: auto;
+    }
+}
